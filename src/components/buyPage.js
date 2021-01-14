@@ -24,10 +24,10 @@ const BuyPage = ({ addInCart }) => {
     const photos = response.data.photos;
     console.log(photos);
 
-    const allProducts = photos.map((photo) => ({
+    const allProducts = photos.map((photo, i) => ({
       smallImage: photo.src.medium,
       tinyImage: photo.src.tiny,
-      name: name[Math.floor(Math.random() * name.length)],
+      name: name[i],
       productPrice: price[Math.floor(Math.random() * price.length)],
       id: random.uuid(),
     }));
