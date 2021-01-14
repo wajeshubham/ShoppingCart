@@ -36,7 +36,7 @@ const BuyPage = ({ addInCart }) => {
 
   useEffect(() => {
     fetchPics();
-  }, []);
+  });
 
   return (
     <Container fluid>
