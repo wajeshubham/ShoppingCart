@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import BuyPage from "./components/buyPage";
 import Cart from "./components/Cart";
 
@@ -6,7 +6,6 @@ import { Container, Row, Col } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-toastify/dist/ReactToastify.css";
 
-import Axios from "axios";
 import "./App.css";
 import { toast, ToastContainer } from "react-toastify";
 
