@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Axios from "axios";
 import ItemCard from "./Card";
-import { random } from "faker";
+import { random, commerce } from "faker";
 import { Container, Col, Row } from "reactstrap";
 
 const url = "https://jsonware.com/json/7f26bf2c0233a09ad8426b4e6ad9ccbd.json";
@@ -36,7 +36,7 @@ const BuyPage = ({ addInCart }) => {
 
   useEffect(() => {
     fetchPics();
-  });
+  }, []);
 
   return (
     <Container fluid>
